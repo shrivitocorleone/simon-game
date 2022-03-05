@@ -6,7 +6,13 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin:  2.5%;
+  color: #FEF2BF;
+}
+
+#instructions{
+  font-family: monospace;
+  font-size: 2rem;
   color: #FEF2BF;
 }
 
@@ -27,7 +33,7 @@ body {
 }
 
 .game-over {
-  background-color: red;
+  background-color: purple;
   opacity: 0.8;
 }
 

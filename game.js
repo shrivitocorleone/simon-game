@@ -8,7 +8,7 @@ var started = false;
 
 var level = 0;
 
-$(document).keypress(function() {
+$(document).on("click keypress", function() {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
@@ -48,8 +48,9 @@ function checkAnswer(currentLevel) {
     $("body").addClass("game-over");
     setTimeout(function(){
 $("body").removeClass("game-over");
-}, 200);
-    $("#level-title").text("Game Over, Press Any Key to Restart")
+confirm("Game Over! Your score: " + currentLevel);
+window.location.reload();
+}, 20);
     startOver();
   }
 }
